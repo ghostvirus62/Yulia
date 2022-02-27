@@ -1,16 +1,14 @@
-Check This before writing code:
-
+## You need to set the following:
+```
 import json
-
 intents = discord.Intents.default()
 intents.members = True
 
 client = commands.Bot(command_prefix = 'your_prefix', intents = intents)
+```
 
-
-Create a 'guilds.json' file in current directory and simply add {}
-
-Then write the following code:
+## Create a 'guilds.json' file in your root directory and simply add {}, Then write this:
+```
 @client.event
 async def on_member_join(member):
     with open('guilds.json', 'r', encoding='utf-8') as f:
@@ -30,3 +28,4 @@ async def set_welcome_channel(ctx, channel: discord.TextChannel):
         json.dump(guilds_dict, f, indent=4, ensure_ascii=False)
     
     await ctx.send(f'Sent welcome channel for {ctx.message.guild.name} to {channel.name}')
+    
