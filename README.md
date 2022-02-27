@@ -1,7 +1,7 @@
 # Yulia - A Simple Discord Music Bot Example
 This is a simple music bot example for those who want to get their hands on making their own discord bot can use this code. <br/>
 
-## How I can Enter my Bot Token
+## How I can Enter my Bot Token?
 Well its really easy <br/>
 First, just run the bot once without ``` bot.run(token) ``` <br/>
 A ```config.json``` file would be created, open it and enter your bot token there. <br/>
