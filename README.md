@@ -8,6 +8,8 @@ A ```config.json``` file would be created, open it and enter your bot token ther
 Now, paste the  ``` bot.run(token) ``` back and run the code. <br/>
 Your bot should be online.
 
+## Refer to Additional Commits for additonal features
+
 ## Functions of this bot:
 1. Plays Music<br/>
 2. Welcomes New Member<br/>
@@ -16,8 +18,6 @@ Your bot should be online.
 5. Info about server<br/>
 
 Adding New Insteresting features
-
-
 
 
 
