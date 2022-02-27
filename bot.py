@@ -1,5 +1,3 @@
-from ast import Lambda
-from http import client, server
 import discord
 from discord.ext import commands, tasks
 import youtube_dl
@@ -83,8 +81,8 @@ async def ping(ctx):
     await ctx.send(f"Pong! {latency}ms")
 
 @bot.command()
-async def hi(ctx, member):
-    await ctx.send(f"Hello! {member}")
+async def hi(ctx):
+    await ctx.send(f"Hello There!")
 
 @bot.command()
 @commands.has_permissions(ban_members=True)
@@ -167,12 +165,14 @@ async def stop(ctx):
 
 
 
-
-
-
-
-
-# To do:
-# custimize the embed links
-# Add music functionality
 bot.run(token)
+
+
+
+
+
+
+
+
+
+
