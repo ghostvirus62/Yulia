@@ -1,3 +1,4 @@
+from http import client
 import discord
 from discord.ext import commands, tasks
 import youtube_dl
@@ -76,9 +77,14 @@ async def on_ready():
 
 
 @bot.command()
+async def info(ctx):
+    await ctx.send("ID: {}".format(ctx.guild.id))
+
+@bot.command()
 async def ping(ctx):
     latency = round(bot.latency * 1000, 1)
     await ctx.send(f"Pong! {latency}ms")
+
 
 @bot.command()
 async def hi(ctx):
